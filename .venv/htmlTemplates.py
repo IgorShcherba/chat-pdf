@@ -1,0 +1,25 @@
+css = '''
+<style>
+
+.chat-message { padding: 1.5rem; border-radius:0.5rem; margin-bottom: 1rem; display: flex}
+
+.chat-message.user { background-color: #2b313e;}
+
+.chat-message.bot { background-color: #475063;}
+
+.chat-message .message { width: 85%; padding: 0 1.35rem; color: #fff; }
+</style
+
+'''
+
+bot_template='''
+<div class="chat-message bot">
+    <div className="message">{{MSG}}</div>
+</div>
+'''
+
+user_template='''
+<div class="chat-message user">
+    <div className="message">AI: {{MSG}}</div>
+</div>
+'''
